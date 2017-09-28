@@ -2,9 +2,7 @@
 
 <%= form_with model: @user, url: '/sessions', local: true do |f| %>
   <% if @login_error %>
-    <ul>
-      <li><%= @login_error %></li>
-    </ul>
+      <p class="error"><%= @login_error %></p>
   <% end %>
 
   <p>
