@@ -1,0 +1,19 @@
+<h2>Log In</h2>
+
+<%= form_with model: @user, url: '/sessions', local: true do |f| %>
+  <% if @login_error %>
+    <ul>
+      <li><%= @login_error %></li>
+    </ul>
+  <% end %>
+
+  <p>
+    <%= f.text_field :username, placeholder: "username" %>
+  </p>
+  <p>
+    <%= f.password_field :password, placeholder: "password" %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
