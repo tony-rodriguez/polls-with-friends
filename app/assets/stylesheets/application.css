@@ -18,6 +18,14 @@
   font-family: 'Zilla Slab', serif;
 }
 
+.home-link {
+  text-decoration: none;
+}
+
+.home-link:visited {
+  color: black;
+}
+
 header {
   background-color: #c1fbff;
   height: 45px;
